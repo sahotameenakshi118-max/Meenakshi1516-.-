@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Power gym training poster</title>
+  <desc id="desc">A dramatic gym poster with a barbell, kettlebell, lightning accents, and the words Train With Purpose.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#11151a"/><stop offset=".52" stop-color="#20282b"/><stop offset="1" stop-color="#080b0d"/>
+    </linearGradient>
+    <linearGradient id="lime" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ecff4f"/><stop offset="1" stop-color="#8dcf22"/></linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#edf4f2"/><stop offset=".45" stop-color="#697477"/><stop offset=".55" stop-color="#252d30"/><stop offset="1" stop-color="#aeb8b6"/></linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff5b4c"/><stop offset="1" stop-color="#b71923"/></linearGradient>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse"><path d="M52 0H0V52" fill="none" stroke="#d8f64a" stroke-opacity=".07" stroke-width="1"/></pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur in="SourceAlpha" stdDeviation="13"/><feOffset dy="17"/><feComponentTransfer><feFuncA type="linear" slope=".45"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#grid)"/>
+  <path d="M0 720L350 390L590 620L870 260L1200 620V900H0Z" fill="#0b1115" opacity=".8"/>
+  <path d="M0 0H1200V8H0Z" fill="url(#lime)" filter="url(#glow)"/>
+
+  <g opacity=".42" stroke="#ebff52" fill="none">
+    <path d="M80 670L220 330L320 550L465 280" stroke-width="3"/>
+    <path d="M790 640L900 300L1030 510L1150 250" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(86 96)">
+    <path d="M0 0H48" stroke="url(#lime)" stroke-width="7"/>
+    <text x="0" y="54" fill="#efff80" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="5">FORGE ATHLETICS</text>
+    <text x="0" y="84" fill="#8a9693" font-family="Arial, sans-serif" font-size="11" letter-spacing="3">STRENGTH • FOCUS • DISCIPLINE</text>
+  </g>
+
+  <g transform="translate(79 300)" fill="#f2f8f5" font-family="Arial Black, Arial, sans-serif" font-weight="900">
+    <text x="0" y="0" font-size="93" letter-spacing="-3">TRAIN</text>
+    <text x="0" y="94" font-size="93" fill="url(#lime)" letter-spacing="-3">WITH</text>
+    <text x="0" y="188" font-size="93" letter-spacing="-3">PURPOSE.</text>
+    <path d="M4 225H312" stroke="url(#lime)" stroke-width="5"/>
+    <text x="4" y="258" fill="#95a19e" font-family="Arial, sans-serif" font-size="15" letter-spacing="4">ONE MORE REP STARTS HERE</text>
+  </g>
+
+  <!-- Barbell -->
+  <g transform="translate(610 485) rotate(-7)" filter="url(#shadow)">
+    <rect x="-380" y="-10" width="760" height="20" rx="10" fill="url(#steel)"/>
+    <rect x="-340" y="-20" width="17" height="40" fill="url(#lime)"/>
+    <rect x="323" y="-20" width="17" height="40" fill="url(#lime)"/>
+    <g fill="url(#red)" stroke="#ff8072" stroke-width="3"><rect x="-365" y="-68" width="30" height="136" rx="8"/><rect x="-402" y="-55" width="29" height="110" rx="8"/><rect x="335" y="-68" width="30" height="136" rx="8"/><rect x="373" y="-55" width="29" height="110" rx="8"/></g>
+    <g fill="url(#steel)" stroke="#d9e8e3" stroke-width="2"><rect x="-433" y="-46" width="18" height="92" rx="5"/><rect x="414" y="-46" width="18" height="92" rx="5"/></g>
+    <circle cx="-380" cy="0" r="6" fill="#efff80"/><circle cx="380" cy="0" r="6" fill="#efff80"/>
+  </g>
+
+  <!-- Kettlebell -->
+  <g transform="translate(925 615)" filter="url(#shadow)">
+    <path d="M-70 -32 C-78 -127 78 -127 70 -32" fill="none" stroke="url(#steel)" stroke-width="27" stroke-linecap="round"/>
+    <path d="M-75 -20 Q-120 50 -69 119 Q0 169 69 119 Q120 50 75 -20 Q0 -52 -75 -20Z" fill="#161d20" stroke="url(#lime)" stroke-width="7"/>
+    <path d="M-87 31 Q0 70 87 31" fill="none" stroke="#728080" stroke-width="5" opacity=".6"/>
+    <path d="M-38 42 L0 11 L38 42 L23 95 H-23Z" fill="url(#red)" opacity=".92"/>
+    <text x="0" y="75" text-anchor="middle" fill="#fff" font-family="Arial Black, Arial, sans-serif" font-size="24">24</text>
+    <text x="0" y="101" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="11" letter-spacing="2">KG</text>
+  </g>
+
+  <!-- Dumbbell -->
+  <g transform="translate(960 760) rotate(-18)" filter="url(#shadow)">
+    <rect x="-125" y="-10" width="250" height="20" rx="10" fill="url(#steel)"/>
+    <g fill="url(#lime)" stroke="#efff82" stroke-width="3"><rect x="-155" y="-54" width="28" height="108" rx="7"/><rect x="-188" y="-42" width="27" height="84" rx="7"/><rect x="127" y="-54" width="28" height="108" rx="7"/><rect x="161" y="-42" width="27" height="84" rx="7"/></g>
+  </g>
+
+  <!-- Small metrics -->
+  <g transform="translate(82 760)" font-family="Arial, sans-serif">
+    <text fill="#7f8d8a" font-size="12" letter-spacing="3">SESSION  /  042</text>
+    <text y="40" fill="#f0f7f4" font-size="24" font-weight="700">BUILD THE HABIT</text>
+    <path d="M0 58H245" stroke="#596562"/>
+    <text y="87" fill="#d7e45b" font-size="13" letter-spacing="2">SHOW UP. LIFT. REPEAT.</text>
+  </g>
+
+  <g fill="#efff80" filter="url(#glow)"><circle cx="1070" cy="164" r="4"/><circle cx="1110" cy="205" r="2"/><circle cx="775" cy="130" r="3"/><circle cx="298" cy="190" r="2"/></g>
+  <text x="1115" y="848" text-anchor="end" fill="#596562" font-family="Arial, sans-serif" font-size="11" letter-spacing="3">EST. 2026</text>
+</svg>

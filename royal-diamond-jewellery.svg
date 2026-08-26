@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Royal diamond jewellery in a velvet jewel case</title>
+  <desc id="desc">A luminous diamond necklace, crown, and earrings displayed against royal blue velvet with gold ornamentation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07142d"/>
+      <stop offset="0.52" stop-color="#102c52"/>
+      <stop offset="1" stop-color="#250e24"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="38%" r="60%">
+      <stop offset="0" stop-color="#89d8ef" stop-opacity=".42"/>
+      <stop offset=".35" stop-color="#337a9c" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#07142d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="velvet" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#691f49"/>
+      <stop offset=".5" stop-color="#3b1136"/>
+      <stop offset="1" stop-color="#160b22"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fff0a6"/>
+      <stop offset=".25" stop-color="#c78a2d"/>
+      <stop offset=".55" stop-color="#ffe38a"/>
+      <stop offset="1" stop-color="#805019"/>
+    </linearGradient>
+    <linearGradient id="diamond" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffffff"/>
+      <stop offset=".3" stop-color="#d4f6ff"/>
+      <stop offset=".62" stop-color="#78bad3"/>
+      <stop offset=".82" stop-color="#f4ffff"/>
+      <stop offset="1" stop-color="#6393bb"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="14" result="blur"/>
+      <feOffset dy="18" result="offset"/>
+      <feColorMatrix in="offset" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0.2  0 0 0 .65 0"/>
+      <feBlend in="SourceGraphic"/>
+    </filter>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grain" width="9" height="9" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="3" r=".8" fill="#fff" opacity=".035"/><circle cx="7" cy="7" r=".7" fill="#000" opacity=".05"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#halo)"/>
+  <path d="M0 680 Q260 570 540 690 T1200 640 V900 H0Z" fill="url(#velvet)"/>
+  <path d="M0 680 Q260 570 540 690 T1200 640 V900 H0Z" fill="url(#grain)"/>
+
+  <g fill="none" stroke="url(#gold)" stroke-width="3" opacity=".75">
+    <path d="M44 180 Q130 78 214 180 Q132 260 44 180Z"/>
+    <path d="M985 180 Q1070 78 1156 180 Q1071 260 985 180Z"/>
+    <path d="M77 180 Q130 126 181 180 Q131 227 77 180Z"/>
+    <path d="M1019 180 Q1071 126 1123 180 Q1070 227 1019 180Z"/>
+    <path d="M54 755 Q110 700 165 755 Q110 810 54 755Z"/>
+    <path d="M1035 755 Q1090 700 1146 755 Q1091 810 1035 755Z"/>
+  </g>
+  <g fill="#f8db78" filter="url(#glow)">
+    <circle cx="130" cy="130" r="4"/><circle cx="1070" cy="130" r="4"/><circle cx="105" cy="755" r="3"/><circle cx="1100" cy="755" r="3"/>
+  </g>
+
+  <g text-anchor="middle" fill="#fff2b1">
+    <text x="600" y="78" font-family="Georgia, serif" font-size="18" letter-spacing="7">THE HOUSE OF</text>
+    <text x="600" y="126" font-family="Georgia, serif" font-size="42" letter-spacing="9">AURELIA</text>
+    <path d="M430 148 H770" stroke="url(#gold)" stroke-width="2"/>
+    <text x="600" y="174" font-family="Arial, sans-serif" font-size="11" letter-spacing="4" opacity=".75">A ROYAL COLLECTION</text>
+  </g>
+
+  <!-- Crown -->
+  <g transform="translate(600 235)" filter="url(#shadow)">
+    <path d="M-142 16 L-111 -67 L-37 0 L0 -96 L37 0 L111 -67 L142 16 L124 61 H-124Z" fill="#ba7a23" stroke="#ffe995" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M-124 16 L-111 -45 L-37 19 L0 -71 L37 19 L111 -45 L124 16 L110 40 H-110Z" fill="url(#gold)"/>
+    <path d="M-119 36 H119 L106 62 H-106Z" fill="#8b581c" stroke="#fbe48d" stroke-width="4"/>
+    <g fill="url(#diamond)" stroke="#ecffff" stroke-width="2">
+      <path d="M-111 -67 l12 20 -12 21 -12 -21Z"/><path d="M0 -96 l15 25 -15 29 -15 -29Z"/><path d="M111 -67 l12 20 -12 21 -12 -21Z"/>
+      <path d="M-37 0 l14 22 -14 24 -14 -24Z"/><path d="M37 0 l14 22 -14 24 -14 -24Z"/>
+    </g>
+    <g fill="#82d7ee" stroke="#eaffff" stroke-width="2"><circle cx="-87" cy="28" r="9"/><circle cx="0" cy="33" r="11"/><circle cx="87" cy="28" r="9"/></g>
+  </g>
+
+  <!-- Necklace shadow and chain -->
+  <path d="M255 475 Q600 770 945 475" fill="none" stroke="#090817" stroke-opacity=".55" stroke-width="25" filter="url(#shadow)"/>
+  <path d="M255 462 Q600 750 945 462" fill="none" stroke="url(#gold)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M257 462 Q600 750 943 462" fill="none" stroke="#fff0a0" stroke-width="2" stroke-dasharray="2 12"/>
+
+  <!-- Necklace diamonds -->
+  <g fill="url(#diamond)" stroke="#e9fdff" stroke-width="2" filter="url(#glow)">
+    <path d="M255 442 l17 26 -17 26 -17 -26Z"/><path d="M315 494 l20 29 -20 30 -20 -30Z"/><path d="M383 544 l23 32 -23 35 -23 -35Z"/>
+    <path d="M458 590 l25 35 -25 39 -25 -39Z"/><path d="M537 624 l28 39 -28 44 -28 -44Z"/>
+    <path d="M600 646 l34 47 -34 53 -34 -53Z"/>
+    <path d="M663 624 l28 39 -28 44 -28 -44Z"/><path d="M742 590 l25 35 -25 39 -25 -39Z"/><path d="M817 544 l23 32 -23 35 -23 -35Z"/>
+    <path d="M885 494 l20 29 -20 30 -20 -30Z"/><path d="M945 442 l17 26 -17 26 -17 -26Z"/>
+  </g>
+  <g fill="#fff" opacity=".9"><circle cx="255" cy="442" r="3"/><circle cx="600" cy="646" r="4"/><circle cx="945" cy="442" r="3"/></g>
+
+  <!-- Central pendant -->
+  <g transform="translate(600 785)" filter="url(#shadow)">
+    <path d="M-20 -69 C-20 -93 20 -93 20 -69 L20 -52" fill="none" stroke="url(#gold)" stroke-width="11"/>
+    <path d="M0 -63 L61 -10 L0 73 L-61 -10Z" fill="url(#diamond)" stroke="#f2ffff" stroke-width="4"/>
+    <path d="M0 -63 L0 73 M-61 -10 H61 M-61 -10 L0 8 L61 -10" fill="none" stroke="#72a8c5" stroke-width="2"/>
+    <path d="M0 -63 L0 8 L-61 -10 M0 8 L61 -10" fill="#ffffff" opacity=".25"/>
+  </g>
+
+  <!-- Earrings -->
+  <g transform="translate(178 470)" filter="url(#shadow)">
+    <circle r="18" fill="url(#diamond)" stroke="#fff" stroke-width="3"/><path d="M-10 20 H10 L18 90 L0 119 L-18 90Z" fill="url(#diamond)" stroke="#eaffff" stroke-width="3"/><path d="M0 22 V113 M-18 90 H18" stroke="#77a9c1" stroke-width="2"/>
+  </g>
+  <g transform="translate(1022 470)" filter="url(#shadow)">
+    <circle r="18" fill="url(#diamond)" stroke="#fff" stroke-width="3"/><path d="M-10 20 H10 L18 90 L0 119 L-18 90Z" fill="url(#diamond)" stroke="#eaffff" stroke-width="3"/><path d="M0 22 V113 M-18 90 H18" stroke="#77a9c1" stroke-width="2"/>
+  </g>
+
+  <g fill="#fff" opacity=".8">
+    <circle cx="295" cy="314" r="2"/><circle cx="913" cy="300" r="2"/><circle cx="350" cy="235" r="1.5"/><circle cx="856" cy="226" r="1.5"/><circle cx="220" cy="635" r="1.5"/><circle cx="976" cy="620" r="1.5"/>
+  </g>
+</svg>
